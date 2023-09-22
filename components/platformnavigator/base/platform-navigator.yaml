@@ -4,7 +4,6 @@ metadata:
   name: platform-navigator
 spec:
   license:
-    accept: true
     license: L-YBXJ-ADJNSM
   mqDashboard: true
   replicas: 1

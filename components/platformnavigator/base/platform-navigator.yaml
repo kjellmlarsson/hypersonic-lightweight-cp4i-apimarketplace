@@ -5,7 +5,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-RJON-CJR2RX
+    license: L-YBXJ-ADJNSM
   mqDashboard: true
   replicas: 1
   storage:

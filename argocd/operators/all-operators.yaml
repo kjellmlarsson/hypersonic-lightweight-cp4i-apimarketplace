@@ -12,6 +12,8 @@ spec:
           namespace: openshift-operators
         - name: platformnavigator
           namespace: openshift-operators
+        - name: eventstreams
+          namespace: openshift-operators
         - name: cert-utils
           namespace: cert-utils-operator
   template:

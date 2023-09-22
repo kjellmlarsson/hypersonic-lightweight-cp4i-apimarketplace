@@ -12,7 +12,7 @@ resources:
 
   - operators/all-operators.yaml
   
-  - operands/all-operands.yaml
+  #- operands/all-operands.yaml
  
   #- apps/ibm-offices.yaml
   #- apps/ace-hello-world.yaml
@@ -25,7 +25,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/Nordic-MVP-GitOps-Repos/hypersonic-lightweight-cp4i.git
+      value: https://github.com/kjellmlarsson/hypersonic-lightweight-cp4i-apimarketplace.git
     - op: add
       path: /spec/source/targetRevision
       value: HEAD
@@ -35,7 +35,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/template/spec/source/repoURL
-      value: https://github.com/Nordic-MVP-GitOps-Repos/hypersonic-lightweight-cp4i-apimarketplace.git
+      value: https://github.com/kjellmlarsson/hypersonic-lightweight-cp4i-apimarketplace.git
     - op: add
       path: /spec/template/spec/source/targetRevision
       value: HEAD

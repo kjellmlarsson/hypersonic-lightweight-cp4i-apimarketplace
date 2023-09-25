@@ -4,8 +4,8 @@ kind: Kustomization
 resources:
   - apiconnect-cluster.yaml
   
-  #- apis/cat-facts-api.yaml
-  #- apis/cat-facts-api-definition.yaml
+  - apis/cat-facts-api.yaml
+  - apis/cat-facts-api-definition.yaml
 
-  #- apis/dog-facts-api.yaml
-  #- apis/dog-facts-api-definition.yaml
+  - apis/dog-facts-api.yaml
+  - apis/dog-facts-api-definition.yaml

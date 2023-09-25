@@ -6,3 +6,6 @@ resources:
   
   - apis/cat-facts-api.yaml
   - apis/cat-facts-api-definition.yaml
+
+  - apis/dog-facts-api.yaml
+  #- apis/cat-facts-api-definition.yaml

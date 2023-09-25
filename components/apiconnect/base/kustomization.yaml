@@ -3,4 +3,6 @@ kind: Kustomization
 
 resources:
   - apiconnect-cluster.yaml
+  
   - apis/cat-facts-api.yaml
+  - apis/cat-facts-api-definition.yaml

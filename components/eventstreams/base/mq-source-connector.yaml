@@ -12,11 +12,11 @@ spec:
   class: com.ibm.eventstreams.connect.mqsource.MQSourceConnector
   tasksMax: 1
   config:
-    topic: sample-orders-topic
+    topic: mainframe-streaming-queue-topic
     mq.queue.manager: SINGLEINSTANCEQM
     mq.connection.name.list: singleinstance-qm-ibm-mq.cp4i.svc(1414)
     mq.channel.name: SICHL
-    mq.queue: ORDERLOG
+    mq.queue: MAINFRAME-QUEUE-STREAMING
     key.converter: org.apache.kafka.connect.storage.StringConverter
     mq.message.body.jms: true
     value.converter: org.apache.kafka.connect.storage.StringConverter

@@ -1,10 +1,11 @@
 apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
-  name: MAINFRAME.MQ.STREAMING.QUEUE
+  name: mainframe-mq-streaming-queue
   namespace: cp4i
   labels:
     eventstreams.ibm.com/cluster: eventstreams
 spec:
   replicas: 1
+  topicName: MAINFRAME.MQ.STREAMING.QUEUE
   partitions: 1

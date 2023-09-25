@@ -5,7 +5,8 @@ metadata:
   namespace: cp4i
 spec:
   definition:
-    external: 'https://catfact.ninja/docs/api-docs.json'
+    external:
+      url: https://catfact.ninja/docs/api-docs.json
   share:
     apim:
       credentialsSecret: apim-credentials

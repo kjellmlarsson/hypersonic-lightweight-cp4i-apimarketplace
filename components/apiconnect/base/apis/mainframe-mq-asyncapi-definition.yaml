@@ -10,7 +10,7 @@ data:
       title: MAINFRAME.MQ.STREAMING.QUEUE
       version: 1.0.0
       x-ibm-summary: |-
-        A topic connected via streaming queue to a mainframe MQ queue
+        Asynch API exposing a mainframe MQ queue via a streaming queue
       x-ibm-name: mainframe.mq.streaming.queue
       contact:
         email: notprovided@email.com

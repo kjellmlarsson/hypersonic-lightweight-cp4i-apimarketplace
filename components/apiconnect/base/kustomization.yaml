@@ -11,3 +11,4 @@ resources:
   - apis/dog-facts-api-definition.yaml
 
   - apis/mainframe-mq-asyncapi-definition.yaml
+  - apis/mainframe-mq-asyncapi.yaml

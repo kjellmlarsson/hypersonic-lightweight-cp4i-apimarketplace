@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - apis/cat-facts-api.yaml
+  - apis/cat-facts-api-definition.yaml
+  
+  - apis/dog-facts-api.yaml
+  - apis/dog-facts-api-definition.yaml
+  
+  - apis/mainframe-mq-asyncapi-definition.yaml
+  - apis/mainframe-mq-asyncapi.yaml

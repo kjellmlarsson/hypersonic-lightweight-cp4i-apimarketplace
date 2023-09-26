@@ -1,0 +1,70 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mainframe-mq-asyncapi-definition
+  namespace: cp4i
+  uid: cb7b0999-5a74-409a-aad4-24789cbaa467
+  resourceVersion: '6513789'
+  creationTimestamp: '2023-09-26T08:05:11Z'
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: v1
+      time: '2023-09-26T08:05:11Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          .: {}
+          'f:data': {}
+        'f:immutable': {}
+immutable: false
+data:
+  data: |-
+    asyncapi: 2.1.0
+    info:
+      title: MAINFRAME.MQ.STREAMING.QUEUE
+      version: 1.0.0
+      x-ibm-name: mainframe.mq.streaming.queue
+      contact:
+        email: notprovided@email.com
+    tags:
+      - name: Mainframe
+      - name: MQ
+    channels:
+      MAINFRAME.MQ.STREAMING.QUEUE:
+        bindings:
+          kafka:
+            partitions: 1
+            replicas: 1
+        subscribe:
+          message:
+            payload: {}
+    servers:
+      cluster:
+        url: $(bootstrapServerAddress)
+        protocol: kafka-secure
+        security:
+          - X-IBM-Client-Id: []
+    components:
+      securitySchemes:
+        X-IBM-Client-Id:
+          type: plain
+    x-ibm-configuration:
+      enforced: true
+      phase: realized
+      assembly:
+        execute:
+          - invoke-kafka:
+              title: invoke-kafka
+              version: 1.0.0
+              bootstrap.servers: $(bootstrapServerAddress)
+              clusterconfigid: cd940ded-db1f-41ac-95c1-18acbf27ba86
+      properties:
+        bootstrapServerAddress:
+          value: handled.by.eem
+      type: asyncapi
+      testable: false
+      x-ibm-eem: ea338d83-f9c8-429f-a1a7-d15b709b5522
+      cors:
+        enabled: false
+      gateway: event-gateway

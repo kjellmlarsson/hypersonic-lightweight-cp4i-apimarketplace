@@ -57,7 +57,7 @@ data:
       version: '1.0'
       x-ibm-name: cat-facts-api
       x-ibm-summary: |-
-       Cat Facts API
+       Cat Facts API - An API for Cats
     openapi: 3.0.0
     paths:
       /breeds:

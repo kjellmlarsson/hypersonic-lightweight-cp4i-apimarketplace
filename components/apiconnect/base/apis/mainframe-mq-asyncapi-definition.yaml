@@ -9,6 +9,8 @@ data:
     info:
       title: MAINFRAME.MQ.STREAMING.QUEUE
       version: 1.0.0
+      x-ibm-summary: |-
+        A topic connected via streaming queue to a mainframe MQ queue
       x-ibm-name: mainframe.mq.streaming.queue
       contact:
         email: notprovided@email.com

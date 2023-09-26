@@ -14,3 +14,4 @@ resources:
   #- apis/mainframe-mq-asyncapi.yaml
 
   - apis/
+  - products/

@@ -9,6 +9,10 @@ data:
     info:
       title: Dog Facts API V2
       version: 1.0.0
+      x-ibm-summary: |-
+        The Dog API provides a wealth of information on dog breeds, groups, and fun
+        facts. Access and integrate this data into your website or application with
+        our easy-to-use JSON API.
       description: >-
         The Dog API provides a wealth of information on dog breeds, groups, and fun
         facts. Access and integrate this data into your website or application with

@@ -1,7 +1,7 @@
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: Product
 metadata:
-  name: dog-facts-product
+  name: countries-product
 spec:
   state: Published
   definition:

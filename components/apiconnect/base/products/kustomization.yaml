@@ -5,3 +5,4 @@ resources:
   - cat-facts-product.yaml
   - dog-facts-product.yaml
   - countries-product.yaml
+  - mainframe-mq-product.yaml

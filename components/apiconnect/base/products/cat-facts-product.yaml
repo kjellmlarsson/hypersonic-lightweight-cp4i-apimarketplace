@@ -22,7 +22,7 @@ spec:
         approval: false
   apis:
     apis:
-      - name: cat-facts-api
+      - name: dog-facts-api
   share:
     apim:
       credentialsSecret: apim-credentials

@@ -22,9 +22,9 @@ spec:
         approval: false
   apis:
     apis:
-      - name: dog-facts-api
+      - name: cat-facts-api
   share:
     apim:
       credentialsSecret: apim-credentials
       providerOrg: providerorg
-      catalog: Sandbox
+      catalog: sandbox

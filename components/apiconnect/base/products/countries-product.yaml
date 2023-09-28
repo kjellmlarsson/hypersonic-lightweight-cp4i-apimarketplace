@@ -23,8 +23,8 @@ spec:
   apis:
     apis:
       - name: countries-gql-api
-  #share:
-  #  apim:
-  #    credentialsSecret: apim-credentials
-  #    providerOrg: providerorg
-  #    catalog: sandbox
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg
+      catalog: sandbox

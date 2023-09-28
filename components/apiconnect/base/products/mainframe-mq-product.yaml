@@ -7,7 +7,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: MainFframe MQ AsyncAPI 
+      title: Mainframe MQ AsyncAPI 
       name: mainframe-mq-async-product
       description: >-
         AsyncAPI exposing a mainframe MQ queue via a streaming queue

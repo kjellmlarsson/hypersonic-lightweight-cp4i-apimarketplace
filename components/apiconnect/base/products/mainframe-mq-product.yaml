@@ -12,6 +12,8 @@ spec:
       description: >-
         AsyncAPI exposing a mainframe MQ queue via a streaming queue
       version: '1.0'
+    gateways:
+       - event-gateway
     plans:
       default-plan:
         rate-limits:

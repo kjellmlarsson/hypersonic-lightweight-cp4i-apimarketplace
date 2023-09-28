@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - cat-facts-product.yaml
+  - dog-facts-product.yaml

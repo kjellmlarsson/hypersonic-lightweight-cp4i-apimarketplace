@@ -7,7 +7,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Cat Facts
+      title: Dog Facts
       name: dog-facts-product
       description: >-
         The Dog API provides a wealth of information on dog breeds, groups, and fun

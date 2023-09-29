@@ -10,7 +10,7 @@ spec:
       title: Animal Facts REST APIs
       name: animal-facts-product
       description: >-
-        A collection of animal fact REST APIs
+        A collection of animal fact REST APIs - updated
       version: '1.0'
     plans:
       default-plan:

@@ -2,18 +2,18 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - cat-facts-api.yaml
-  - cat-facts-api-definition.yaml
+  #- cat-facts-api.yaml
+  #- cat-facts-api-definition.yaml
   
-  - dog-facts-api.yaml
-  - dog-facts-api-definition.yaml
+  #- dog-facts-api.yaml
+  #- dog-facts-api-definition.yaml
   
-  - mainframe-mq-asyncapi-definition.yaml
-  - mainframe-mq-asyncapi.yaml
+  #- mainframe-mq-asyncapi-definition.yaml
+  #- mainframe-mq-asyncapi.yaml
 
-  - countries-gql-api-definition.yaml
-  - countries-gql-api.yaml
+  #- countries-gql-api-definition.yaml
+  #- countries-gql-api.yaml
 
-  - animals-product.yaml
-  - countries-product.yaml
-  - mainframe-mq-product.yaml
+  #- animals-product.yaml
+  #- countries-product.yaml
+  #- mainframe-mq-product.yaml

@@ -8,12 +8,18 @@ resources:
   - dog-facts-api.yaml
   - dog-facts-api-definition.yaml
   
-  #- mainframe-mq-asyncapi-definition.yaml
-  #- mainframe-mq-asyncapi.yaml
+  - animals-product.yaml
 
   - countries-gql-api-definition.yaml
   - countries-gql-api.yaml
-
-  - animals-product.yaml
   - countries-product.yaml
+
+  - door-badgein-api.yaml
+ 
+  #- mainframe-mq-asyncapi-definition.yaml
+  #- mainframe-mq-asyncapi.yaml
   #- mainframe-mq-product.yaml
+
+  
+ 
+  

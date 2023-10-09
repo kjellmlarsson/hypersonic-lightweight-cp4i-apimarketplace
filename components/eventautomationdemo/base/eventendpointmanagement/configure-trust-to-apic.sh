@@ -2,7 +2,6 @@
 # To setup trust we need to the CA from API Connect and the platform API uri
 # Find API Connect platform api endpoint
 
-
 apic_platform_uri=$(oc get -n cp4i apiconnectcluster/apic-cluster -o json | jq '.status.endpoints | .[] | select(.name=="platformApi") | .uri')
 
 echo $apic_platform_uri

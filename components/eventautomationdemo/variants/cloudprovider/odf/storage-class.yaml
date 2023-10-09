@@ -1,0 +1,11 @@
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: EventStreams
+metadata:
+  name: my-kafka-cluster
+spec:
+    kafka:
+      storage:
+        class: ocs-storagecluster-ceph-rbd
+    zookeeper:
+      storage:
+        class: ocs-storagecluster-ceph-rbd

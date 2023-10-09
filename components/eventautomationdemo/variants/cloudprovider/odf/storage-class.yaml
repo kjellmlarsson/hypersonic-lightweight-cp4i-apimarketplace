@@ -4,6 +4,7 @@ metadata:
   name: my-kafka-cluster
   namespace: event-automation
 spec:
+  strimziOverrides:
     kafka:
       storage:
         class: ocs-storagecluster-ceph-rbd

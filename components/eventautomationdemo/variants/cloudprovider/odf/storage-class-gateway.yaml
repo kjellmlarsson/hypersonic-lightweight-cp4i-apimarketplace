@@ -1,0 +1,8 @@
+apiVersion: events.ibm.com/v1beta1
+kind: EventEndpointManagement
+metadata:
+  name: my-eem-manager
+spec:
+  manager:
+    storage:
+      storageClassName: ocs-storagecluster-cephfs

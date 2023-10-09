@@ -5,3 +5,4 @@ resources:
   - 03-eem.yaml
   - 04-egw.yaml
   - users-secret.yaml
+  - roles-secret.yaml

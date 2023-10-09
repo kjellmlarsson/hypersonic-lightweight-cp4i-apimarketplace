@@ -1,0 +1,32 @@
+apiVersion: events.ibm.com/v1beta1
+kind: EventEndpointManagement
+metadata:
+  name: my-eem-manager
+spec:
+  license:
+    accept: true
+    license: L-HRZF-DWHH7A
+    metric: VIRTUAL_PROCESSOR_CORE
+    use: EventAutomationNonProduction
+  manager:
+    authConfig:
+      authType: LOCAL
+    storage:
+      type: persistent-claim
+      size: 250M
+      storageClassName: PATCHED_BY_KUSTOMIZE
+    template:
+      pod:
+        spec:
+          containers:
+            - name: manager
+              envFrom:
+                - configMapRef:
+                    name: event-automation-welcome-urls
+              resources:
+                requests:
+                  cpu: '0.25'
+                  memory: 256Mi
+                limits:
+                  cpu: '0.5'
+                  memory: 512Mi

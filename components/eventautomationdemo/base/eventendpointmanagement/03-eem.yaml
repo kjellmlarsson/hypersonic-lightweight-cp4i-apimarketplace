@@ -20,9 +20,9 @@ spec:
         spec:
           containers:
             - name: manager
-              envFrom:
-                - configMapRef:
-                    name: event-automation-welcome-urls
+              #envFrom:
+              #  - configMapRef:
+              #      name: event-automation-welcome-urls
               resources:
                 requests:
                   cpu: '0.25'

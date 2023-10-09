@@ -1,6 +1,0 @@
-spec:
-  manager:
-    tls:
-      trustedCertificates:
-        - certificate: ca.crt
-          secretName: apim-cpd

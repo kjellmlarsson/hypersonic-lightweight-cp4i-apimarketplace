@@ -7,13 +7,6 @@ spec:
   adminUI:
     authentication:
       - type: scram-sha-512
-    #env:
-    #  - name: WELCOME_URL_EVENT_STREAMS
-    #    value: {{ welcome_url_eventstreams }}
-    #  - name: WELCOME_URL_EVENT_ENDPOINT_MANAGEMENT
-    #    value: {{ welcome_url_eventendpointmanagement }}
-    #  - name: WELCOME_URL_EVENT_PROCESSING
-    #    value: {{ welcome_url_eventprocessing }}
   license:
     accept: true
     license: L-HRZF-DWHH7A
@@ -39,13 +32,13 @@ spec:
           port: 9095
           tls: true
           type: internal
-      replicas: 3
+      replicas: 1
       storage:
         type: persistent-claim
         size: 50Gi
         class: PATCHED_BY_KUSTOMIZE
     zookeeper:
-      replicas: 3
+      replicas: 1
       storage:
         type: persistent-claim
         size: 3Gi

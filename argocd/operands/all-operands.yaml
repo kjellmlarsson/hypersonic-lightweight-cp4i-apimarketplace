@@ -21,8 +21,8 @@ spec:
         - name: reloader
           namespace: cp4i
           sync-wave: "200"
-        #- name: eventautomationdemo
-        #  namespace: event-automation-ns
+        - name: eventautomationdemo
+          namespace: event-automation-ns
   template:
     metadata:
       name: '{{name}}'

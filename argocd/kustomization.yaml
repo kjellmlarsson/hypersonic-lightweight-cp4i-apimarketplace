@@ -8,7 +8,7 @@ resources:
   - cp4i-argo-role.yaml
   - cp4i-argo-rb.yaml
 
-  - common.yaml
+  #- common.yaml
 
   - operators/all-operators.yaml
   

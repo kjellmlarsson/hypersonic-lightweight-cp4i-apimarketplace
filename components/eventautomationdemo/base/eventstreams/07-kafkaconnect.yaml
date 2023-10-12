@@ -11,7 +11,7 @@ spec:
     config.storage.topic: connect-configs
     offset.storage.topic: connect-offsets
     status.storage.topic: connect-status
-  bootstrapServers: 'my-kafka-cluster-kafka-bootstrap.{{ eventautomation_namespace }}.svc:9095'
+  bootstrapServers: 'my-kafka-cluster-kafka-bootstrap.event-automation-ns.svc:9095'
   resources:
     limits:
       cpu: 2048m
@@ -58,7 +58,7 @@ spec:
   build:
     output:
       type: docker
-      image: image-registry.openshift-image-registry.svc:5000/{{ eventautomation_namespace }}/event-automation-demo:0.0.1
+      image: image-registry.openshift-image-registry.svc:5000/event-automation-ns/event-automation-demo:0.0.1
     plugins:
       - name: datagen
         artifacts:

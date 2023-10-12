@@ -38,7 +38,7 @@ spec:
         size: 50Gi
         class: PATCHED_BY_KUSTOMIZE
     zookeeper:
-      replicas: 1
+      replicas: 3
       storage:
         type: persistent-claim
         size: 3Gi

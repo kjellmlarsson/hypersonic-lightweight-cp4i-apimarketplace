@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: event-automation
+  name: event-automation-ns
   labels:
     clusterresourceoverrides.admission.autoscaling.openshift.io/enabled: "true"
 spec: {}

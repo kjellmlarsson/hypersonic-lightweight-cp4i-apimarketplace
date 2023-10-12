@@ -6,21 +6,21 @@ spec:
   generators:
   - list:
       elements:
-        - name: apiconnect
-          namespace: cp4i
-          sync-wave: "300"
-        - name: mq
-          namespace: cp4i
-          sync-wave: "300"
-        - name: eventstreams
-          namespace: cp4i
-          sync-wave: "300"
-        - name: platformnavigator
-          namespace: cp4i
-          sync-wave: "200"
-        - name: reloader
-          namespace: cp4i
-          sync-wave: "200"
+        #- name: apiconnect
+        #  namespace: cp4i
+        #  sync-wave: "300"
+        #- name: mq
+        #  namespace: cp4i
+        #  sync-wave: "300"
+        #- name: eventstreams
+        #  namespace: cp4i
+        #  sync-wave: "300"
+        #- name: platformnavigator
+        #  namespace: cp4i
+        #  sync-wave: "200"
+        #- name: reloader
+        #  namespace: cp4i
+        #  sync-wave: "200"
         - name: eventautomationdemo
           namespace: event-automation-ns
   template:

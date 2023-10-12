@@ -32,7 +32,7 @@ spec:
           port: 9095
           tls: true
           type: internal
-      replicas: 1
+      replicas: 3
       storage:
         type: persistent-claim
         size: 50Gi

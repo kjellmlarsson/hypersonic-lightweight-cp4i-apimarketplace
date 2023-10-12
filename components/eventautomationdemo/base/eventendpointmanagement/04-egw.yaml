@@ -3,7 +3,7 @@ kind: EventGateway
 metadata:
   name: my-eem-gateway
 spec:
-  managerEndpoint: https://my-eem-manager-ibm-eem-manager.event-automation.svc:7001
+  managerEndpoint: https://my-eem-manager-ibm-eem-manager.event-automation-ns.svc:7001
   gatewayGroupName: gateway-group
   gatewayID: gateway-1
   license:

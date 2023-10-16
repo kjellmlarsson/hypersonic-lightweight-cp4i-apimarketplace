@@ -44,7 +44,7 @@ spec:
         size: 3Gi
         class: ocs-storagecluster-ceph-rbd
   version: latest
-  ---
+---
 apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:

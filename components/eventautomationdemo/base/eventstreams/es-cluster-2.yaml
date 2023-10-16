@@ -36,11 +36,11 @@ spec:
       storage:
         type: persistent-claim
         size: 50Gi
-        class: PATCHED_BY_KUSTOMIZE
+        class: ocs-storagecluster-ceph-rbd
     zookeeper:
       replicas: 3
       storage:
         type: persistent-claim
         size: 3Gi
-        class: PATCHED_BY_KUSTOMIZE
+        class: ocs-storagecluster-ceph-rbd
   version: latest

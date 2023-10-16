@@ -32,13 +32,13 @@ spec:
           port: 9097
           tls: true
           type: internal
-      replicas: 1
+      replicas: 3
       storage:
         type: persistent-claim
         size: 50Gi
         class: ocs-storagecluster-ceph-rbd
     zookeeper:
-      replicas: 1
+      replicas: 3
       storage:
         type: persistent-claim
         size: 3Gi

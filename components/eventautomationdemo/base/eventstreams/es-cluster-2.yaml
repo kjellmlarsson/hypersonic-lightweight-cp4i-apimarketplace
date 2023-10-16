@@ -1,0 +1,46 @@
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: EventStreams
+metadata:
+  name: es-cluster-2
+spec:
+  adminApi: {}
+  adminUI:
+    authentication:
+      - type: scram-sha-512
+  license:
+    accept: true
+    license: L-HRZF-DWHH7A
+    use: EventAutomationNonProduction
+  requestIbmServices:
+    iam: false
+    monitoring: false
+  strimziOverrides:
+    entityOperator:
+      topicOperator: {}
+      userOperator: {}
+    kafka:
+      authorization:
+        authorizerClass: com.ibm.eventstreams.runas.authorizer.RunAsAuthorizer
+        supportsAdminApi: true
+        type: custom
+      config:
+        auto.create.topics.enable: true
+      listeners:
+        - name: authsslsvc
+          authentication:
+            type: scram-sha-512
+          port: 9095
+          tls: true
+          type: internal
+      replicas: 3
+      storage:
+        type: persistent-claim
+        size: 50Gi
+        class: PATCHED_BY_KUSTOMIZE
+    zookeeper:
+      replicas: 3
+      storage:
+        type: persistent-claim
+        size: 3Gi
+        class: PATCHED_BY_KUSTOMIZE
+  version: latest

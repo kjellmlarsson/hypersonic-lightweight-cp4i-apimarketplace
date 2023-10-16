@@ -29,7 +29,7 @@ spec:
         - name: authsslsvc
           authentication:
             type: scram-sha-512
-          port: 9095
+          port: 9097
           tls: true
           type: internal
       replicas: 1

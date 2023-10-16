@@ -20,7 +20,7 @@ resources:
 
   - sensor-readings-api-definition.yaml
   - sensor-readings-api.yaml
-  #- sensor-readings-product.yaml
+  - sensor-readings-product.yaml
  
   #- mainframe-mq-asyncapi-definition.yaml
   #- mainframe-mq-asyncapi.yaml

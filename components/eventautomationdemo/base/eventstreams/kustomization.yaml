@@ -2,7 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  #- namespace.yaml
   - 03-es.yaml
   - 04-es-user.yaml
   - 05-kafkaconnect-topics.yaml
@@ -11,3 +10,5 @@ resources:
   - 08-datagen.yaml
   - 09-apps-user.yaml
   
+  - es-cluster-2.yaml
+  - es-cluster-2-user.yaml

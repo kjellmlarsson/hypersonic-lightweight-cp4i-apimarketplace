@@ -16,7 +16,7 @@ resources:
 
   - door-badgein-api-definition.yaml
   - door-badgein-api.yaml
-  #- door-badgein-product.yaml
+  - door-badgein-product.yaml
  
   #- mainframe-mq-asyncapi-definition.yaml
   #- mainframe-mq-asyncapi.yaml

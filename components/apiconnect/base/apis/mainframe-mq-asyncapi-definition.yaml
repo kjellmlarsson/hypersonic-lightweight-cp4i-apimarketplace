@@ -7,11 +7,13 @@ data:
   data: |-
     asyncapi: 2.1.0
     info:
+      description: |-
+        AsyncAPI exposing a mainframe MQ queue via a streaming queue
       title: MAINFRAME.MQ.STREAMING.QUEUE
       version: 1.0.0
       x-ibm-summary: |-
         AsyncAPI exposing a mainframe MQ queue via a streaming queue
-      x-ibm-name: mainframe.mq.streaming.queue
+      x-ibm-name: MAINFRAME.MQ.STREAMING.QUEUE
       contact:
         email: notprovided@email.com
     tags:
@@ -45,13 +47,12 @@ data:
               title: invoke-kafka
               version: 1.0.0
               bootstrap.servers: $(bootstrapServerAddress)
-              clusterconfigid: cd940ded-db1f-41ac-95c1-18acbf27ba86
+              clusterconfigid: 3b17ea31-e01e-4ed6-ad51-3a2dd64611e8
       properties:
         bootstrapServerAddress:
           value: handled.by.eem
       type: asyncapi
       testable: false
-      x-ibm-eem: ea338d83-f9c8-429f-a1a7-d15b709b5522
+      x-ibm-eem: 3b17ea31-e01e-4ed6-ad51-3a2dd64611e8
       cors:
         enabled: false
-      gateway: event-gateway

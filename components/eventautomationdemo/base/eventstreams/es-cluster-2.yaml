@@ -32,13 +32,13 @@ spec:
           port: 9095
           tls: true
           type: internal
-      replicas: 3
+      replicas: 1
       storage:
         type: persistent-claim
         size: 50Gi
         class: ocs-storagecluster-ceph-rbd
     zookeeper:
-      replicas: 3
+      replicas: 1
       storage:
         type: persistent-claim
         size: 3Gi
@@ -57,4 +57,3 @@ spec:
     retention.bytes: '1024288000'
   partitions: 3
   replicas: 3
-  topicName: CLUSTER.TWO.TOPIC

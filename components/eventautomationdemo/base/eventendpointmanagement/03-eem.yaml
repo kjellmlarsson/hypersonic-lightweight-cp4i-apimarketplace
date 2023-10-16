@@ -9,16 +9,16 @@ spec:
     metric: VIRTUAL_PROCESSOR_CORE
     use: EventAutomationNonProduction
   manager:
-    #apic:
-    #  jwks:
-    #    endpoint: >-
-    #      https://cpd-cp4i.apps.ocp-2700015rqr-y4lq.cloud.techzone.ibm.com/integration/apis/cp4i/apic-cluster/api/cloud/oauth2/certs
+    apic:
+      jwks:
+        endpoint: >-
+          https://cpd-cp4i.apps.6528fa796504f20017091291.cloud.techzone.ibm.com/integration/apis/cp4i/apic-cluster/api/cloud/oauth2/certs
     tls: 
       ui:
         secretName: default-cert-copy
-    # trustedCertificates:
-    #    - certificate: ca.crt
-    #      secretName: apim-cpd
+      trustedCertificates:
+        - certificate: ca.crt
+          secretName: apim-cpd
     authConfig:
       authType: LOCAL
     storage:

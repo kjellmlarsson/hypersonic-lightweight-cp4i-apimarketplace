@@ -1,0 +1,33 @@
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: Product
+metadata:
+  name: sensor-readings-product
+spec:
+  state: Published
+  definition:
+    product: 1.0.0
+    info:
+      title: Sensor Readings
+      name: sensor-readings-product
+      description: >-
+         Readings from the logistics team&#x27;s IoT network, capturing internal temperature and humidity data for areas where product is stored. 
+         Note that sensor events can take up to 5 minutes to reach the Kafka topic, so the sensortime value in the message payload should be treated as the canonical timestamp for the event.
+      version: '1.0'
+    gateways:
+       - event-gateway
+    plans:
+      default-plan:
+        rate-limits:
+          default:
+            value: 100/1hour
+        title: Default Plan
+        description: Default Plan
+        approval: false
+  apis:
+    apis:
+      - name: sensor-readings-api
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg
+      catalog: sandbox

@@ -10,7 +10,7 @@ spec:
       title: Mainframe MQ Order Events 
       name: mainframe-orders-product
       description: >-
-        AsyncAPI exposing mainframe MQ orders queue via a streaming queue
+        Kafka Topic exposing mainframe MQ orders queue via a streaming queue
       version: '1.0'
     gateways:
        - event-gateway

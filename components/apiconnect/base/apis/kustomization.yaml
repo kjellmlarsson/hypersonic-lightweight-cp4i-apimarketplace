@@ -26,9 +26,9 @@ resources:
   - mainframe-orders-api.yaml
   - mainframe-orders-product.yaml
  
-  #- mainframe-mq-asyncapi-definition.yaml
-  #- mainframe-mq-asyncapi.yaml
-  #- mainframe-mq-product.yaml
+  - mainframe-mq-asyncapi-definition.yaml
+  - mainframe-mq-asyncapi.yaml
+  - mainframe-mq-product.yaml
 
   
  

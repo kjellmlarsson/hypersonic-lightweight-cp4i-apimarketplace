@@ -9,7 +9,7 @@ EVENT_GATEWAY_NAME=eem-gateway
 # Define names of the existing CRs in OpenShift
 EEM_MANAGER_CR_NAME=my-eem-manager
 EEM_GATEWAY_CR_NAME=my-eem-gateway
-EEM_NAMESPACE=event-automation
+EEM_NAMESPACE=event-automation-ns
 EEM_CA_SECRET_NAME=$EEM_MANAGER_CR_NAME-ibm-eem-manager
 
 # Directory to write and read files from

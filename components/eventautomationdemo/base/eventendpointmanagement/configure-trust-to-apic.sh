@@ -12,6 +12,6 @@ set -x
 # Create a new secret in the event automation namespace containing the CA from the cp4i namespace
 rm -f /tmp/cert.crt
 oc get secret -n cp4i default-ssl -o jsonpath="{.data['cert\.crt']}" | base64 -d > /tmp/cert.crt
-oc create secret generic apim-cpd -n event-automation --from-file=ca.crt=/tmp/cert.crt
+oc create secret generic apim-cpd -n event-automation-ns --from-file=ca.crt=/tmp/cert.crt
 
 # We can now configure eem to use the new secret.

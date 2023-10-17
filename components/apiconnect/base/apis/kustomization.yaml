@@ -22,9 +22,9 @@ resources:
   - sensor-readings-api.yaml
   - sensor-readings-product.yaml
 
-  #- mainframe-orders-definition.yaml
-  #- mainframe-orders-api.yaml
-  #- mainframe-orders-product.yaml
+  - mainframe-orders-api-definition.yaml
+  - mainframe-orders-api.yaml
+  - mainframe-orders-product.yaml
  
   #- mainframe-mq-asyncapi-definition.yaml
   #- mainframe-mq-asyncapi.yaml

@@ -7,7 +7,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Mainframe MQ AsyncAPI 
+      title: Mainframe MQ Order Events 
       name: mainframe-orders-product
       description: >-
         AsyncAPI exposing mainframe MQ orders queue via a streaming queue

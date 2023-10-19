@@ -1,0 +1,84 @@
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: EventStreams
+metadata:
+  name: eventstreams
+  namespace: eventstreams-third-cluster
+spec:
+  security:
+    internalTls: TLSv1.2
+  license:
+    accept: true
+    use: CloudPakForIntegrationNonProduction
+    license: L-YBXJ-ADJNSM
+  requestIbmServices:
+    iam: false
+    monitoring: false
+  strimziOverrides:
+    entityOperator:
+      topicOperator: {}
+    kafka:
+      config:
+        config:
+        auto.create.topics.enable: false
+        inter.broker.protocol.version: '3.3'
+        offsets.topic.replication.factor: 1
+        transaction.state.log.min.isr: 1
+        transaction.state.log.replication.factor: 1
+      metricsConfig:
+        valueFrom:
+          configMapKeyRef:
+            key: kafka-metrics-config.yaml
+            name: eventstreams-metrics-config
+        type: jmxPrometheusExporter
+      storage:
+        type: persistent-claim
+        class: ocs-storagecluster-ceph-rbd
+        size: 10Gi
+      listeners:
+        - name: plain
+          port: 9092
+          type: internal
+          tls: false
+      replicas: 1
+    zookeeper:
+      metricsConfig:
+        valueFrom:
+          configMapKeyRef:
+            key: zookeeper-metrics-config.yaml
+            name: eventstreams-metrics-config
+        type: jmxPrometheusExporter
+      storage:
+        type: persistent-claim
+        class: ocs-storagecluster-ceph-rbd
+        size: 10Gi
+      replicas: 1
+  adminUI: {}
+  restProducer: {}
+  apicurioRegistry: {}
+  adminApi: {}
+  collector: {}
+  version: latest
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: apa-quotes
+  namespace: eventstreams-third-cluster
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams-third-cluster
+spec:
+  replicas: 1
+  topicName: APA.QUOTES
+  partitions: 1
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: apa-trades
+  namespace: eventstreams-third-cluster
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams-third-cluster
+spec:
+  replicas: 1
+  topicName: APA.TRADES
+  partitions: 1

@@ -13,3 +13,11 @@ metadata:
   labels:
     clusterresourceoverrides.admission.autoscaling.openshift.io/enabled: "true"
 spec: {}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eventstreams-third-cluster
+  labels:
+    clusterresourceoverrides.admission.autoscaling.openshift.io/enabled: "true"
+spec: {}

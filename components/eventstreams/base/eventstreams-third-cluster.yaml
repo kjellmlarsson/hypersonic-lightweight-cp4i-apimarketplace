@@ -64,7 +64,7 @@ metadata:
   name: apa-quotes
   namespace: eventstreams-third-cluster
   labels:
-    eventstreams.ibm.com/cluster: eventstreams-third-cluster
+    eventstreams.ibm.com/cluster: eventstreams
 spec:
   replicas: 1
   topicName: APA.QUOTES
@@ -74,7 +74,7 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: apa-trades
-  namespace: eventstreams-third-cluster
+  namespace: eventstreams
   labels:
     eventstreams.ibm.com/cluster: eventstreams-third-cluster
 spec:

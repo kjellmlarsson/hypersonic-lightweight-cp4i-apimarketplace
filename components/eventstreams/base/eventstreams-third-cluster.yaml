@@ -74,9 +74,9 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: apa-trades
-  namespace: eventstreams
+  namespace: eventstreams-third-cluster
   labels:
-    eventstreams.ibm.com/cluster: eventstreams-third-cluster
+    eventstreams.ibm.com/cluster: eventstreams
 spec:
   replicas: 1
   topicName: APA.TRADES

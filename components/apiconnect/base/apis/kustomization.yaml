@@ -26,6 +26,8 @@ resources:
   - mainframe-orders-api.yaml
   - mainframe-orders-product.yaml
  
+  - vehicle-info-api-definition.yaml
+
   #- mainframe-mq-asyncapi-definition.yaml
   #- mainframe-mq-asyncapi.yaml
   #- mainframe-mq-product.yaml

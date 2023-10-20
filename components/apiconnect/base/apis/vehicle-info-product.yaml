@@ -7,10 +7,15 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Vehicle Info
+      title: NHTSA Product Information Catalog Vehicle Listing
       name: vechicle-info-product
       description: >-
-        NHTSA Product Information Catalog Vehicle Listing
+        The NHTSA Product Information Catalog Vehicle Listing (vPIC) Application Programming Interface (API) provides different ways to gather 
+        information on Vehicles and their specifications. The vPIC Dataset is populated using the information submitted by the Motor 
+        Vehicle manufacturers through the 565 submittals. All the information on how a VIN is assigned by the manufacturer is captured in 
+        this catalog and used to decode a VIN and extract vehicle information.
+        Users/Applications attempting to use vPIC APIs will be controlled by an automated traffic rate control mechanism to 
+        ensure optimal performance of the NHTSA websites and minimize adverse impact to our users.
       version: '1.0'
     plans:
       default-plan:

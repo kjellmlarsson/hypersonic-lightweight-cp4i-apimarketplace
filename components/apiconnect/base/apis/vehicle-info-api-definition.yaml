@@ -10,7 +10,7 @@ data:
     basePath: /
     info:
       version: 1.0.0
-      title: NHTSA Product Information Catalog Vehicle Listing
+      title: Get All Manufacturers
       x-ibm-name: nhtsa-product-information-catalog-vehicle-listing
     x-ibm-configuration:
       type: rest

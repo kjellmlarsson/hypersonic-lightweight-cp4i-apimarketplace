@@ -10,3 +10,35 @@ spec:
     apim:
       credentialsSecret: apim-credentials
       providerOrg: providerorg
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: vehicle-info-api-all-makes-definition
+  namespace: cp4i
+data:
+  data: |-
+    swagger: '2.0'
+    host: vpic.nhtsa.dot.gov
+    basePath: /
+    info:
+      version: 1.0.0
+      title: Get All Makes
+      x-ibm-name: get-all-makes
+    x-ibm-configuration:
+      type: rest
+      phase: realized
+      enforced: false
+      testable: false
+    paths:
+      /api/vehicles/getallmakes?format=json:
+        get:
+          responses:
+            '200':
+              description: success
+              schema:
+                type: string
+          consumes: []
+          produces: []
+    schemes:
+      - https

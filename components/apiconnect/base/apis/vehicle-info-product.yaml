@@ -16,7 +16,8 @@ spec:
         this catalog and used to decode a VIN and extract vehicle information.
         Users/Applications attempting to use vPIC APIs will be controlled by an automated traffic rate control mechanism to 
         ensure optimal performance of the NHTSA websites and minimize adverse impact to our users.
-        <br>
+        
+        
         <b>The APIs in this product are unenforced and will not go through the API Connect DataPower Gateway</b>
       version: '1.0'
     plans:

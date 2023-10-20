@@ -28,6 +28,7 @@ spec:
   apis:
     apis:
       - name: vehicle-info-api
+      - name: vehicle-info-api-all-makes
   share:
     apim:
       credentialsSecret: apim-credentials

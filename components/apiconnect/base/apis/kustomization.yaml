@@ -28,6 +28,8 @@ resources:
  
   - vehicle-info-api-definition.yaml
   - vehicle-info-api.yaml
+  - vehicle-info-product.yaml
+  
 
   #- mainframe-mq-asyncapi-definition.yaml
   #- mainframe-mq-asyncapi.yaml

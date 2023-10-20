@@ -19,7 +19,7 @@ data:
       cors:
         enabled: true
       type: rest
-      phase: specified
+      phase: identified
       enforced: false
       testable: false
     paths:

@@ -10,3 +10,63 @@ spec:
     apim:
       credentialsSecret: apim-credentials
       providerOrg: providerorg
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mainframe-mq-asyncapi-definition
+  namespace: cp4i
+data:
+  data: |-
+    asyncapi: 2.1.0
+    info:
+      description: |-
+        AsyncAPI exposing a mainframe MQ queue via a streaming queue
+      title: MAINFRAME.MQ.STREAMING.QUEUE
+      version: 1.0.0
+      x-ibm-summary: |-
+        AsyncAPI exposing a mainframe MQ queue via a streaming queue
+      x-ibm-name: MAINFRAME.MQ.STREAMING.QUEUE
+      contact:
+        email: notprovided@email.com
+    tags:
+      - name: Mainframe
+      - name: MQ
+    channels:
+      MAINFRAME.MQ.STREAMING.QUEUE:
+        bindings:
+          kafka:
+            partitions: 1
+            replicas: 1
+        subscribe:
+          message:
+            payload: {}
+    servers:
+      cluster:
+        url: $(bootstrapServerAddress)
+        protocol: kafka-secure
+        security:
+          - X-IBM-Client-Id: []
+    components:
+      securitySchemes:
+        X-IBM-Client-Id:
+          type: plain
+    x-ibm-configuration:
+      enforced: true
+      phase: realized
+      assembly:
+        execute:
+          - invoke-kafka:
+              title: invoke-kafka
+              version: 1.0.0
+              bootstrap.servers: $(bootstrapServerAddress)
+              clusterconfigid: 3b17ea31-e01e-4ed6-ad51-3a2dd64611e8
+      properties:
+        bootstrapServerAddress:
+          value: handled.by.eem
+      type: asyncapi
+      testable: false
+      x-ibm-eem: 3b17ea31-e01e-4ed6-ad51-3a2dd64611e8
+      cors:
+        enabled: false
+

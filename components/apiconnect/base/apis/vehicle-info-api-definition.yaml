@@ -10,7 +10,6 @@ data:
       version: 1.0.0
       title: NHTSA Product Information Catalog Vehicle Listing
       x-ibm-name: nhtsa-product-information-catalog-vehicle-listing
-    basePath: /vehicle-manufacturers
     x-ibm-configuration:
       properties:
         target-url:

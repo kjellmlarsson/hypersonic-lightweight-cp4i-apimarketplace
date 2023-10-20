@@ -1,11 +1,11 @@
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
-  name: vechicle-info-api
+  name: vehicle-info-api
   namespace: cp4i
 spec:
   definition:
-    configMap: vechicle-info-api-definition
+    configMap: vehicle-info-api-definition
   share:
     apim:
       credentialsSecret: apim-credentials

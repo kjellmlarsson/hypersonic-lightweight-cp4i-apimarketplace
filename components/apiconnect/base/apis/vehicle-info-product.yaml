@@ -35,4 +35,4 @@ spec:
     apim:
       credentialsSecret: apim-credentials
       providerOrg: providerorg
-      catalog: api-marketplace
+      catalog: sandbox

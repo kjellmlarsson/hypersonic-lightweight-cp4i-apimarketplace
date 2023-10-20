@@ -6,7 +6,6 @@ metadata:
 data:
   data: |-
     swagger: '2.0'
-    host: https://vpic.nhtsa.dot.gov/api/vehicles/getallmanufacturers?format=json
     info:
       version: 1.0.0
       title: NHTSA Product Information Catalog Vehicle Listing

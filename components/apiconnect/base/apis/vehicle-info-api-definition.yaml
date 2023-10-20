@@ -6,7 +6,7 @@ metadata:
 data:
   data: |-
     swagger: '2.0'
-    host: https://vpic.nhtsa.dot.gov/
+    host: vpic.nhtsa.dot.gov
     basePath: /
     info:
       version: 1.0.0

@@ -13,6 +13,7 @@ data:
     servers:
       production1:
         url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN
+        protocol: kafka
         description: Production Instance 1
         bindings:
           ibmmq: 
@@ -21,6 +22,7 @@ data:
             bindingVersion: 0.1.0
       production2:
         url: ibmmq://qmgr2host:1414/qm2/DEV.APP.SVRCONN
+        protocol: kafka
         description: Production Instance 2
         bindings:
           ibmmq: 

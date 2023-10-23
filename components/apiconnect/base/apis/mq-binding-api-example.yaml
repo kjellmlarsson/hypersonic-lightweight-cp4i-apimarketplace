@@ -65,6 +65,9 @@ data:
                 type: string
                 format: email
                 description: Email of the user
+      securitySchemes:
+        X-IBM-Client-Id:
+        type: apiKey
 ---
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API

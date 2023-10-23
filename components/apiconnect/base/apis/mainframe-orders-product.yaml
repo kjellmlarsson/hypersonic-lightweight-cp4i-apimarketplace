@@ -7,10 +7,10 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Mainframe MQ Order Events 
+      title: Mainframe Order Confirmations 
       name: mainframe-orders-product
       description: >-
-        Kafka Topic - Exposing mainframe MQ orders queue via a streaming queue
+        Kafka Topic - Exposing Order Confirmations of mainframe MQ orders
       version: '1.0'
     gateways:
        - event-gateway

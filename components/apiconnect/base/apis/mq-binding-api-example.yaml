@@ -56,7 +56,7 @@ data:
                 description: Email of the user
       securitySchemes:
         X-IBM-Client-Id:
-          type: apiKey
+          type: userPassword
 ---
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API

@@ -33,7 +33,7 @@ data:
             topic:
               durablePermitted: true
             bindingVersion: 0.1.0
-        subscribe:
+        publish:
           message:
             $ref: '#/components/messages/UserSignedUp'
             bindings:

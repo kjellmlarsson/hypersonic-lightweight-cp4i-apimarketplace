@@ -1,0 +1,103 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mq-binding-api-example-def
+  namespace: cp4i
+data:
+  data: |-
+    asyncapi: 2.0.0
+    info:
+      title: Account Service
+      version: 1.0.0
+      description: This service is in charge of processing user signups
+    servers:
+      production1:
+        url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN
+        protocol: ibmmq-secure
+        description: Production Instance 1
+        bindings:
+          ibmmq: 
+            groupId: PRODCLSTR1
+            cipherSpec: ANY_TLS12_OR_HIGHER
+            bindingVersion: 0.1.0
+      production2:
+        url: ibmmq://qmgr2host:1414/qm2/DEV.APP.SVRCONN
+        protocol: ibmmq-secure
+        description: Production Instance 2
+        bindings:
+          ibmmq: 
+            groupId: PRODCLSTR1
+            cipherSpec: ANY_TLS12_OR_HIGHER
+            bindingVersion: 0.1.0
+    channels:
+      user/signedup:
+        bindings:
+          ibmmq:
+            topic:
+              durablePermitted: true
+            bindingVersion: 0.1.0
+        subscribe:
+          message:
+            $ref: '#/components/messages/UserSignedUp'
+            bindings:
+              ibmmq:
+                type: jms
+                description: JMS bytes message
+                bindingVersion: 0.1.0
+    components:
+      messages:
+        UserSignedUp:
+          payload:
+            type: object
+            properties:
+              displayName:
+                type: string
+                description: Name of the user
+              email:
+                type: string
+                format: email
+                description: Email of the user
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: mq-binding-api-example
+  namespace: cp4i
+spec:
+  definition:
+    configMap: mq-binding-api-example-def
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: Product
+metadata:
+  name: mq-binding-product
+spec:
+  state: Published
+  definition:
+    product: 1.0.0
+    info:
+      title: MQ AsyncAPI Binding Example 
+      name: mq-binding-product
+      description: >-
+        MQ Binding Example
+      version: '1.0'
+    plans:
+      default-plan:
+        rate-limits:
+          default:
+            value: 100/1hour
+        title: Default Plan
+        description: Default Plan
+        approval: false
+  apis:
+    apis:
+      - name: mq-binding-api-example
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg
+      catalog: sandbox

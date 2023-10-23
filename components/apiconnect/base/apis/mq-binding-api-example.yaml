@@ -26,6 +26,17 @@ data:
             groupId: PRODCLSTR1
             cipherSpec: ANY_TLS12_OR_HIGHER
             bindingVersion: 0.1.0
+      production:
+        url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN
+        protocol: ibmmq
+        description: Development
+        security:
+          - X-IBM-Client-Id: []
+        bindings:
+          ibmmq: 
+            groupId: PRODCLSTR1
+            cipherSpec: ANY_TLS12_OR_HIGHER
+            bindingVersion: 0.1.0
     channels:
       order/create:
         bindings:

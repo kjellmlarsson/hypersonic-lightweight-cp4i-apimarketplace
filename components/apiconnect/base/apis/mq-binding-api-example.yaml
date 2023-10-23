@@ -84,7 +84,7 @@ spec:
       title: Create Order MQ Queue 
       name: mq-binding-product
       description: >-
-        Accepts 
+        This MQ queue accepts requests to create orders. 
       version: '1.0'
     plans:
       default-plan:

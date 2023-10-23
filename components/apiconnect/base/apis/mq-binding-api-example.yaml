@@ -10,6 +10,10 @@ data:
       title: Account Service
       version: 1.0.0
       description: This service is in charge of processing user signups
+    x-ibm-configuration:
+      phase: realized
+      enforced: false
+      testable: false
     servers:
       production1:
         url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN

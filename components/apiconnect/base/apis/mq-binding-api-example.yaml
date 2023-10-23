@@ -17,7 +17,7 @@ data:
     servers:
       development:
         url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN
-        protocol: ibmmq-secure
+        protocol: ibmmq-secure-2
         description: Development
         security:
           - X-IBM-Client-Id: []

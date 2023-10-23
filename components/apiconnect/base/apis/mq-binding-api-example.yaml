@@ -53,10 +53,6 @@ data:
                 type: jms
                 description: JMS bytes message
                 bindingVersion: 0.1.0
-        subscribe:
-          message:
-            payload:
-              type: string
     components:
       messages:
         OrderCreate:

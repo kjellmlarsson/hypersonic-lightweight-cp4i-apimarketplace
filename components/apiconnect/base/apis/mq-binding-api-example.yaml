@@ -7,7 +7,7 @@ data:
   data: |-
     asyncapi: 2.0.0
     info:
-      title: Create Order Product
+      title: Create Order
       version: 1.0.0
       description: This MQ queue accepts requests to create orders.
     x-ibm-configuration:

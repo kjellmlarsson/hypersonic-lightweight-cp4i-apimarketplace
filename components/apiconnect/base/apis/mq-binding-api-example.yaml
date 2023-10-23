@@ -15,10 +15,10 @@ data:
       enforced: false
       testable: false
     servers:
-      production1:
+      development:
         url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN
         protocol: kafka
-        description: Production Instance 1
+        description: Development
         security:
           - X-IBM-Client-Id: []
         bindings:
@@ -27,15 +27,16 @@ data:
             cipherSpec: ANY_TLS12_OR_HIGHER
             bindingVersion: 0.1.0
     channels:
-      user/signedup:
+      order/create:
         bindings:
           ibmmq:
+            destinationType: queue
             queue:
-              durablePermitted: true
+              objectName: ORDERS_CREATE
             bindingVersion: 0.1.0
         publish:
           message:
-            $ref: '#/components/messages/UserSignedUp'
+            $ref: '#/components/messages/OrderCreate'
             bindings:
               ibmmq:
                 type: jms
@@ -43,7 +44,7 @@ data:
                 bindingVersion: 0.1.0
     components:
       messages:
-        UserSignedUp:
+        OrderCreate:
           payload:
             type: object
             properties:
@@ -80,10 +81,10 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: MQ AsyncAPI Binding Example 
+      title: MQ Create Order Queue 
       name: mq-binding-product
       description: >-
-        MQ Binding Example
+        Accepts 
       version: '1.0'
     plans:
       default-plan:

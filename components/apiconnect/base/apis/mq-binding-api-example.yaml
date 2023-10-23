@@ -7,9 +7,9 @@ data:
   data: |-
     asyncapi: 2.0.0
     info:
-      title: Account Service
+      title: Create Order
       version: 1.0.0
-      description: This service is in charge of processing user signups
+      description: This MQ queue accepts requests to create orders.
     x-ibm-configuration:
       phase: realized
       enforced: false
@@ -81,7 +81,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: MQ Create Order Queue 
+      title: Create Order MQ Queue 
       name: mq-binding-product
       description: >-
         Accepts 

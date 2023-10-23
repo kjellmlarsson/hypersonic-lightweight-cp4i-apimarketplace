@@ -30,7 +30,7 @@ data:
       user/signedup:
         bindings:
           ibmmq:
-            topic:
+            queue:
               durablePermitted: true
             bindingVersion: 0.1.0
         publish:

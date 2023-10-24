@@ -17,6 +17,7 @@ data:
     tags: 
       - name: MQ
       - name: Queue
+      - name: Not Enforced
     servers:
       development:
         url: ibmmq://qmgr-dev:1414/qm1/DEV.APP.SVRCONN

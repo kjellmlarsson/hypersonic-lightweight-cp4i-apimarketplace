@@ -31,7 +31,7 @@ data:
       title: DOOR.BADGEIN
       version: 1.0.0
       x-ibm-summary: |-
-        Records an employee using their id badge to go through a door. This includes entry into the building overall, as well as entry through internal office doors.
+        1 - Records an employee using their id badge to go through a door. This includes entry into the building overall, as well as entry through internal office doors.
         
         Building exits do not require use of id badge, so a door badge in event does not imply that the employee will still be in the building.
         

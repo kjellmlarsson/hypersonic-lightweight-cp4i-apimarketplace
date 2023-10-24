@@ -14,6 +14,7 @@ data:
       phase: realized
       enforced: false
       testable: false
+      type: asyncapi
     tags: 
       - name: MQ
       - name: Queue

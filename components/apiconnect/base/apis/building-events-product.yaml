@@ -1,0 +1,33 @@
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: Product
+metadata:
+  name: building-events-product
+spec:
+  state: Published
+  definition:
+    product: 1.0.0
+    info:
+      title: Door Badgein
+      name: building-events-product
+      description: >-
+        Kafka Topics for events in the building.
+      version: '1.0'
+    gateways:
+       - event-gateway
+    plans:
+      default-plan:
+        rate-limits:
+          default:
+            value: 100/1hour
+        title: Default Plan
+        description: Default Plan
+        approval: false
+  apis:
+    apis:
+      - name: door-badgein-api
+      - name: sensor-readings-api
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg
+      catalog: sandbox

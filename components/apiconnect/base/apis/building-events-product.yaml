@@ -7,10 +7,10 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Door Badgein
+      title: Building Events
       name: building-events-product
       description: >-
-        Kafka Topics for events in the building.
+        Kafka Topics for events in the building - includes usage of badges and sensor readings from rooms.
       version: '1.0'
     gateways:
        - event-gateway

@@ -21,7 +21,7 @@ data:
     openapi: 3.0.1
     tags:
       - name: REST
-      - name: Test
+      - name: Enforced
     info:
       title: Dog Facts API V2
       version: 1.0.0

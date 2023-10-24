@@ -7,7 +7,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Animal Facts REST APIs
+      title: 1. Animal Facts REST APIs
       name: animal-facts-product
       description: >-
         A collection of animal fact REST APIs - contains facts and breeds.

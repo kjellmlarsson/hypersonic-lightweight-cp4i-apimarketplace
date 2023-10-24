@@ -7,7 +7,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Building Events
+      title: 4. Building Events
       name: building-events-product
       description: >-
         Kafka Topics for events in the building - includes usage of badges and sensor readings from rooms.

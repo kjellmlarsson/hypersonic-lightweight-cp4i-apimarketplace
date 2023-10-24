@@ -30,6 +30,9 @@ data:
       phase: realized
       enforced: false
       testable: false
+    tags:
+      - name: REST
+      - name: Not Enforced
     paths:
       /api/vehicles/getallmanufacturers?format=json:
         get:

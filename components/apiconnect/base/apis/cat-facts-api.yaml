@@ -72,6 +72,9 @@ data:
       x-ibm-summary: |-
        Cat Facts API - An API for Cats
     openapi: 3.0.0
+    tags:
+      - name: REST
+      - name: Enforced
     paths:
       /breeds:
         get:

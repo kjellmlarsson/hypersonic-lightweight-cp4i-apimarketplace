@@ -12,7 +12,7 @@ data:
       description: This MQ queue accepts requests to create orders.
     x-ibm-configuration:
       phase: realized
-      enforced: true
+      enforced: false
       testable: false
       type: asyncapi
     tags: 

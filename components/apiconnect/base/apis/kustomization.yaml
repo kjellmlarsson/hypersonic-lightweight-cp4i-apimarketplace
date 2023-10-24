@@ -16,8 +16,8 @@ resources:
   - sensor-readings-api.yaml
   #- sensor-readings-product.yaml
   - building-events-product.yaml
-  - mainframe-orders-api.yaml
-  - mainframe-orders-product.yaml
+  #- mainframe-orders-api.yaml
+  #- mainframe-orders-product.yaml
  
   - vehicle-info-api.yaml
   - vehicle-info-api-all-makes.yaml

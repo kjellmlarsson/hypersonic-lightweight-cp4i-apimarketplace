@@ -14,6 +14,9 @@ data:
       phase: realized
       enforced: false
       testable: false
+    tags: 
+      - name: MQ
+      - name: Queue
     servers:
       development:
         url: ibmmq://qmgr-dev:1414/qm1/DEV.APP.SVRCONN
@@ -92,7 +95,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: Create Order MQ Queue 
+      title: 5. MQ Create Order Queue 
       name: mq-binding-product
       description: >-
         This MQ queue accepts requests to create orders. 

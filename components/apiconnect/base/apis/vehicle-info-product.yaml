@@ -13,7 +13,7 @@ spec:
         The National Highway Traffic Safety Administration (NHTSA) Product Information Catalog Vehicle Listing (vPIC) Application Programming Interface (API) provides different ways to gather 
         information on Vehicles and their specifications. 
         
-        
+
         The vPIC Dataset is populated using the information submitted by the Motor 
         Vehicle manufacturers through the 565 submittals. All the information on how a VIN is assigned by the manufacturer is captured in 
         this catalog and used to decode a VIN and extract vehicle information.
@@ -25,6 +25,9 @@ spec:
         
         <b>The APIs in this product are unenforced and will not go through the API Connect DataPower Gateway</b>
       version: '1.0'
+      categories:
+        - Domain/Accounts
+        - Protocol/REST
     plans:
       default-plan:
         rate-limits:

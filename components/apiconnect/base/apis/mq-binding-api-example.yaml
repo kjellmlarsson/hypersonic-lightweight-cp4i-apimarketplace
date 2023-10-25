@@ -104,7 +104,6 @@ spec:
       version: '1.0'
       categories:
         - Domain/Accounts
-        - DomainInternal/no
         - Protocol/MQ
     plans:
       default-plan:

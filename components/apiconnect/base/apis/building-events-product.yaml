@@ -14,7 +14,6 @@ spec:
       version: '1.0'
     categories:
       - Domain/Accounts
-      - DomainInternal/no
       - Protocol/Kafka
     gateways:
        - event-gateway

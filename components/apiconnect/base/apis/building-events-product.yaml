@@ -12,9 +12,9 @@ spec:
       description: >-
         Kafka Topics for events in the building - includes usage of badges and sensor readings from rooms.
       version: '1.0'
-    categories:
-        - Domain/Accounts
-        - Protocol/Kafka
+      categories:
+          - Domain/Accounts
+          - Protocol/Kafka
     gateways:
        - event-gateway
     plans:

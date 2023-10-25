@@ -12,6 +12,10 @@ spec:
       description: >-
         A collection of animal fact REST APIs - contains facts and breeds.
       version: '1.0'
+      categories:
+        - Domain/Payments
+        - DomainInternal/no
+        - Protocol/REST
     plans:
       default-plan:
         rate-limits:

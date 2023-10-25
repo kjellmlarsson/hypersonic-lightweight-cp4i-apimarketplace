@@ -11,23 +11,11 @@ resources:
   - countries-product.yaml
 
   - door-badgein-api.yaml
-  #- door-badgein-product.yaml
-
   - sensor-readings-api.yaml
-  #- sensor-readings-product.yaml
   - building-events-product.yaml
-  #- mainframe-orders-api.yaml
-  #- mainframe-orders-product.yaml
- 
+
   - vehicle-info-api.yaml
   - vehicle-info-api-all-makes.yaml
   - vehicle-info-product.yaml
   
   - mq-binding-api-example.yaml
-
-  #- mainframe-mq-asyncapi.yaml
-  #- mainframe-mq-product.yaml
-
-  
- 
-  

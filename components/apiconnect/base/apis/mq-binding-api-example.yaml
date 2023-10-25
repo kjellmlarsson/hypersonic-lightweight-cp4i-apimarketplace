@@ -102,6 +102,10 @@ spec:
       description: >-
         This MQ queue accepts requests to create orders. 
       version: '1.0'
+      categories:
+        - Domain/Accounts
+        - DomainInternal/no
+        - Protocol/MQ
     plans:
       default-plan:
         rate-limits:

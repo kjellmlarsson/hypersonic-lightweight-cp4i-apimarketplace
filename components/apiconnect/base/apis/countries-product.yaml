@@ -12,6 +12,10 @@ spec:
       description: >-
         This is a public GraphQL API for information about countries, continents, and languages.
       version: '1.0'
+      categories:
+        - Domain/Accounts
+        - DomainInternal/yes
+        - Protocol/GraphQL
     plans:
       default-plan:
         rate-limits:

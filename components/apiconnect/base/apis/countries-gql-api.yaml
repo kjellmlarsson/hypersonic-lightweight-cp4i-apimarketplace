@@ -18,16 +18,13 @@ metadata:
   namespace: cp4i
 data:
   data: |-
-    openapi: '3.0.0'
+    swagger: '2.0'
     info:
       title: Countries
       x-ibm-name: countries
       x-ibm-summary: |-
        This is a public GraphQL API for information about countries, continents, and languages.
       version: 1.0.0
-      tags:
-      - name: GraphQL
-      - name: Enforced
     schemes:
       - https
       - wss

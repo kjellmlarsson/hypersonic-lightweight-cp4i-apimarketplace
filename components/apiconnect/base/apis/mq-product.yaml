@@ -10,20 +10,12 @@ spec:
       title: 5. MQ Create Order Queue and Notification Topic
       name: mq-product
       description: >-
-        This products contains AsyncAP1 definitions for an MQ queue that accepts requests to create orders and a corresponding 
+        This product contains AsyncAPI definitions for an MQ queue that accepts requests to create orders and a corresponding 
         topic on which order creation events are published. 
       version: '1.0'
       categories:
         - Domain/Accounts
         - Protocol/MQ
-    plans:
-      default-plan:
-        rate-limits:
-          default:
-            value: 100/1hour
-        title: Default Plan
-        description: Default Plan
-        approval: false
   apis:
     apis:
       - name: mq-queue-api

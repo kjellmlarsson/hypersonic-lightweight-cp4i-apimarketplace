@@ -28,14 +28,6 @@ spec:
       categories:
         - Domain/Accounts
         - Protocol/REST
-    plans:
-      default-plan:
-        rate-limits:
-          default:
-            value: 100/1hour
-        title: Default Plan
-        description: Default Plan
-        approval: false
   apis:
     apis:
       - name: vehicle-info-api

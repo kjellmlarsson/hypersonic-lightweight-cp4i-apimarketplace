@@ -53,19 +53,19 @@ data:
               durable: true
               vhost: /
             bindingVersion: 0.2.0
-      components:
-        messages:
-          order:
-            payload:
-              type: object
-              properties:
-                id:
-                  type: integer
-                  format: int64
-                  description: ID of received order
-                customerReference:
-                  type: string
-                  description: Reference for the customer according the order
+    components:
+      messages:
+        order:
+          payload:
+            type: object
+            properties:
+              id:
+                type: integer
+                format: int64
+                description: ID of received order
+              customerReference:
+                type: string
+                description: Reference for the customer according the order
 ---
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API

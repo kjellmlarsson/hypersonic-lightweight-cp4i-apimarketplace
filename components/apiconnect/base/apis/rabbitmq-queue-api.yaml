@@ -1,0 +1,76 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: rabbitmq-queue-api-definition
+  namespace: cp4i
+data:
+  data: |-
+    asyncapi: 2.0.0
+    info:
+      title: Order Service
+      version: 1.0.0
+      description: The service is in charge of processing orders
+      contact:
+        name: Daniel Kocot
+        email: daniel.kocot@codecentric.de
+      license:
+        name: Apache 2.0
+        url: https://www.apache.org/licenses/LICENSE-2.0.html
+    servers:
+      rabbitmq:
+        url: localhost:5672
+        description: RabbitMQ
+        protocol: amqp
+        protocolVersion: '0.9.1'
+    channels:
+      order-received:
+        publish:
+          operationId: orderReceivedPub
+          description: Payload of received order
+          message:
+            $ref: '#/components/messages/order'
+          bindings:
+            amqp:
+              timestamp: true
+              ack: false
+              bindingVersion: 0.2.0
+        subscribe:
+          operationId: orderReceivedSub
+          description: Payload of received order
+          message:
+            $ref: '#/components/messages/order'
+        bindings:
+          amqp:
+            is: routingKey
+            exchange:
+              name: orderExchange
+              type: direct
+              durable: true
+              vhost: /
+            bindingVersion: 0.2.0
+      components:
+        messages:
+          order:
+            payload:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  format: int64
+                  description: ID of received order
+                customerReference:
+                  type: string
+                  description: Reference for the customer according the order
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: rabbitmq-queue-api
+  namespace: cp4i
+spec:
+  definition:
+    configMap: rabbitmq-queue-api-definition
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg

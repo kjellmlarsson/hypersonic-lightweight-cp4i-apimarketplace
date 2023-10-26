@@ -1,7 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: mq-binding-api-example-def
+  name: mq-queue-api-definition
   namespace: cp4i
 data:
   data: |-
@@ -78,46 +78,12 @@ data:
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
-  name: mq-binding-api-example
+  name: mq-queue-api
   namespace: cp4i
 spec:
   definition:
-    configMap: mq-binding-api-example-def
+    configMap: mq-queue-api-definition
   share:
     apim:
       credentialsSecret: apim-credentials
       providerOrg: providerorg
----
-apiVersion: apiconnect.ibm.com/v1beta1
-kind: Product
-metadata:
-  name: mq-binding-product
-spec:
-  state: Published
-  definition:
-    product: 1.0.0
-    info:
-      title: 5. MQ Create Order Queue 
-      name: mq-binding-product
-      description: >-
-        This MQ queue accepts requests to create orders. 
-      version: '1.0'
-      categories:
-        - Domain/Accounts
-        - Protocol/MQ
-    plans:
-      default-plan:
-        rate-limits:
-          default:
-            value: 100/1hour
-        title: Default Plan
-        description: Default Plan
-        approval: false
-  apis:
-    apis:
-      - name: mq-binding-api-example
-  share:
-    apim:
-      credentialsSecret: apim-credentials
-      providerOrg: providerorg
-      catalog: sandbox

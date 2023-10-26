@@ -1,0 +1,71 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mq-topic-api-definition
+  namespace: cp4i
+data:
+  data: |-
+    asyncapi: 2.0.0
+    info:
+      title: Order Create Events
+      version: 1.0.0
+      description: Order create events are published on this topic
+    servers:
+      production1:
+        url: ibmmq://qmgr1host:1414/qm1/DEV.APP.SVRCONN
+        protocol: ibmmq-secure
+        description: Production Instance 1
+        bindings:
+          ibmmq: 
+            groupId: PRODCLSTR1
+            cipherSpec: ANY_TLS12_OR_HIGHER
+            bindingVersion: 0.1.0
+      production2:
+        url: ibmmq://qmgr2host:1414/qm2/DEV.APP.SVRCONN
+        protocol: ibmmq-secure
+        description: Production Instance 2
+        bindings:
+          ibmmq: 
+            groupId: PRODCLSTR1
+            cipherSpec: ANY_TLS12_OR_HIGHER
+            bindingVersion: 0.1.0
+    channels:
+      order/created:
+        bindings:
+          ibmmq:
+            topic:
+              durablePermitted: true
+            bindingVersion: 0.1.0
+        subscribe:
+          message:
+            $ref: '#/components/messages/OrderCreated'
+            bindings:
+              ibmmq:
+                type: jms
+                description: JMS bytes message
+                bindingVersion: 0.1.0
+    components:
+      messages:
+        OrderCreated:
+          payload:
+            type: object
+            properties:
+              orderId:
+                type: string
+                description: The id of the created order
+              customerId:
+                type: string
+                description: Customer who the order was created for
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: mq-topic-api
+  namespace: cp4i
+spec:
+  definition:
+    configMap: mq-topic-api-definition
+  share:
+    apim:
+      credentialsSecret: apim-credentials
+      providerOrg: providerorg

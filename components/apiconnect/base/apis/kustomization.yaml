@@ -18,4 +18,6 @@ resources:
   - vehicle-info-api-all-makes.yaml
   - vehicle-info-product.yaml
   
-  - mq-binding-api-example.yaml
+  - mq-queue-api.yaml
+  - mq-topic-api.yaml
+  - mq-product.yaml

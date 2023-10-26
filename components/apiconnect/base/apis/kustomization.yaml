@@ -22,5 +22,5 @@ resources:
   - mq-topic-api.yaml
   - mq-product.yaml
 
-  - rabbit-mq-product.yaml
+  - rabbitmq-product.yaml
   - rabbitmq-queue-api.yaml

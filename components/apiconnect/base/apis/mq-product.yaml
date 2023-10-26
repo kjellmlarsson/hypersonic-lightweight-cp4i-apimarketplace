@@ -10,7 +10,7 @@ spec:
       title: 5. MQ Create Order Queue and Notification Topic
       name: mq-binding-product
       description: >-
-        This products contains AsyncAPO definitions for an MQ queue that accepts requests to create orders and a corresponding 
+        This products contains AsyncAP1 definitions for an MQ queue that accepts requests to create orders and a corresponding 
         topic on which order creation events are published. 
       version: '1.0'
       categories:

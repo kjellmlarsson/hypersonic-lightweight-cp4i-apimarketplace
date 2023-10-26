@@ -5,22 +5,19 @@ resources:
 
   - cat-facts-api.yaml  
   - dog-facts-api.yaml  
-  - animals-product.yaml
+  
 
   - countries-gql-api.yaml
-  - countries-product.yaml
 
   - door-badgein-api.yaml
   - sensor-readings-api.yaml
-  - building-events-product.yaml
 
   - vehicle-info-api.yaml
   - vehicle-info-api-all-makes.yaml
-  - vehicle-info-product.yaml
   
   - mq-queue-api.yaml
   - mq-topic-api.yaml
-  - mq-product.yaml
 
-  - rabbitmq-product.yaml
   - rabbitmq-queue-api.yaml
+
+  - products

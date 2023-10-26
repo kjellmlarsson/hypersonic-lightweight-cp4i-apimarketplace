@@ -34,7 +34,7 @@ data:
       production:
         url: ibmmq://qmgr-prod:1414/qm1/DEV.APP.SVRCONN
         protocol: ibmmq
-        description: Development
+        description: Production
         security:
           - X-IBM-Client-Id: []
         bindings:

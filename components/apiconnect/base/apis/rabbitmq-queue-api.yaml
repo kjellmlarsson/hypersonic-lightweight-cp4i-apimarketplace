@@ -20,7 +20,6 @@ data:
       phase: realized
       enforced: false
       testable: false
-      type: asyncapi
     servers:
       rabbitmq:
         url: localhost:5672

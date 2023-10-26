@@ -19,9 +19,6 @@ spec:
        - event-gateway
     plans:
       default-plan:
-        rate-limits:
-          default:
-            value: 100/1hour
         title: Default Plan
         description: Default Plan
         approval: false

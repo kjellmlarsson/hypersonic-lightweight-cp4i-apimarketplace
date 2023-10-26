@@ -16,6 +16,11 @@ data:
       license:
         name: Apache 2.0
         url: https://www.apache.org/licenses/LICENSE-2.0.html
+    x-ibm-configuration:
+      phase: realized
+      enforced: false
+      testable: false
+      type: asyncapi
     servers:
       rabbitmq:
         url: localhost:5672

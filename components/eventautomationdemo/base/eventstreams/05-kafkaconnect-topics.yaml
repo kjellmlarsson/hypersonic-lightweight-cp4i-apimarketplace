@@ -14,19 +14,19 @@ spec:
 
 ---
 
-apiVersion: eventstreams.ibm.com/v1beta2
-kind: KafkaTopic
-metadata:
-  name: mainframe-orders
-  labels:
-    eventstreams.ibm.com/cluster: my-kafka-cluster
-spec:
-  config:
-    min.insync.replicas: '1'
-    retention.bytes: '1024288000'
-  partitions: 3
-  replicas: 3
-  topicName: MAINFRAME.ORDERS
+#apiVersion: eventstreams.ibm.com/v1beta2
+#kind: KafkaTopic
+#metadata:
+#  name: mainframe-orders
+#  labels:
+#    eventstreams.ibm.com/cluster: my-kafka-cluster
+#spec:
+#  config:
+#    min.insync.replicas: '1'
+#    retention.bytes: '1024288000'
+#  partitions: 3
+#  replicas: 3
+#  topicName: MAINFRAME.ORDERS
 
 ---
 

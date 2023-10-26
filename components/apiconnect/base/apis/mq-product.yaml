@@ -19,7 +19,7 @@ spec:
   apis:
     apis:
       - name: mq-queue-api
-      #- name: mq-topic-api
+      - name: mq-topic-api
   share:
     apim:
       credentialsSecret: apim-credentials

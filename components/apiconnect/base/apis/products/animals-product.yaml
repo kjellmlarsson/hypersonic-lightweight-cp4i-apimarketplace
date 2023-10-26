@@ -10,7 +10,7 @@ spec:
       title: 1. Animal Facts REST APIs
       name: animal-facts-product
       description: >-
-        A collection of animal fact REST APIs - contains facts and breeds for cats and dogs
+        A collection of animal fact REST APIs - contains facts and breeds for cats and dogs.
       version: '1.0'
       categories:
         - Domain/Payments

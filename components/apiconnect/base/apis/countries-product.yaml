@@ -19,7 +19,7 @@ spec:
       default-plan:
         rate-limits:
           default:
-            value: 100/1hour
+            value: 1000/1hour
         title: Default Plan
         description: Default Plan
         approval: false

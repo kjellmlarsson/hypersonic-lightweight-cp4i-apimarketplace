@@ -108,3 +108,27 @@ spec:
   replicas: 1
   topicName: SENSOR.READINGS
 
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: apa-quotes
+  namespace: eventstreams-third-cluster
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams
+spec:
+  replicas: 1
+  topicName: APA.QUOTES
+  partitions: 1
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: apa-trades
+  namespace: eventstreams-third-cluster
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams
+spec:
+  replicas: 1
+  topicName: APA.TRADES
+  partitions: 1

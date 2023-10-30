@@ -20,14 +20,14 @@ data:
     asyncapi: 2.1.0
     info:
       description: |-
-        Readings from the logistics team&#x27;s IoT network, capturing internal temperature and humidity data for areas where product is stored.
+        Readings from the logistics teams IoT network, capturing internal temperature and humidity data for areas where product is stored.
         
         Note that sensor events can take up to 5 minutes to reach the Kafka topic, so the sensortime value in the message payload should be treated as the canonical timestamp for the event.
         
       title: SENSOR.READINGS
       version: 1.0.0
       x-ibm-summary: |-
-        Readings from the logistics team&#x27;s IoT network, capturing internal temperature and humidity data for areas where product is stored.
+        Readings from the logistics teams IoT network, capturing internal temperature and humidity data for areas where product is stored.
         
         Note that sensor events can take up to 5 minutes to reach the Kafka topic, so the sensortime value in the message payload should be treated as the canonical timestamp for the event.
         

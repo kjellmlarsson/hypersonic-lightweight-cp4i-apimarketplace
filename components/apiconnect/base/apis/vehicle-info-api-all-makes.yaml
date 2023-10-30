@@ -2,13 +2,11 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: vehicle-info-api-all-makes
-  namespace: cp4i
 spec:
   definition:
     configMap: vehicle-info-api-all-makes-definition
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
 ---
 kind: ConfigMap

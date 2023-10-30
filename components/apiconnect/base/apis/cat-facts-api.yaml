@@ -6,10 +6,9 @@ metadata:
 spec:
   definition:
     configMap: cat-facts-api-definition
-#  share:
-#    apim:
-#      credentialsSecret: apim-credentials
-#      providerOrg: providerorg
+  share:
+    apim:
+      providerOrg: providerorg
 ---
 kind: ConfigMap
 apiVersion: v1

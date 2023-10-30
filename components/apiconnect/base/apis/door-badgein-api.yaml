@@ -2,13 +2,11 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: door-badgein-api
-  namespace: cp4i
 spec:
   definition:
     configMap: door-badgein-api-definition
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
 ---
 kind: ConfigMap

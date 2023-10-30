@@ -8,7 +8,6 @@ spec:
     configMap: dog-facts-api-definition
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
 ---
 apiVersion: v1

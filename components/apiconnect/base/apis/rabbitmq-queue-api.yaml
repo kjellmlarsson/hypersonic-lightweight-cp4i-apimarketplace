@@ -77,5 +77,4 @@ spec:
     configMap: rabbitmq-queue-api-definition
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg

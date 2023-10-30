@@ -6,4 +6,3 @@ spec:
   share:
     apim:
       credentialsSecret: apim-credentials
-      providerOrg: providerorg

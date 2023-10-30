@@ -66,11 +66,9 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: mq-topic-api
-  namespace: cp4i
 spec:
   definition:
     configMap: mq-topic-api-definition
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg

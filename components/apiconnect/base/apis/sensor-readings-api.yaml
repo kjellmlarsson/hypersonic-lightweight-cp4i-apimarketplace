@@ -8,7 +8,6 @@ spec:
     configMap: sensor-readings-api-definition
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
 ---
 kind: ConfigMap

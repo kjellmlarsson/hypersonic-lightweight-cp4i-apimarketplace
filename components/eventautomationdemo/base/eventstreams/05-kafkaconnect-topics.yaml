@@ -115,7 +115,7 @@ metadata:
   name: apa-quotes
   namespace: eventstreams-third-cluster
   labels:
-    eventstreams.ibm.com/cluster: eventstreams
+    eventstreams.ibm.com/cluster: my-kafka-cluster
 spec:
   replicas: 1
   topicName: APA.QUOTES
@@ -127,7 +127,7 @@ metadata:
   name: apa-trades
   namespace: eventstreams-third-cluster
   labels:
-    eventstreams.ibm.com/cluster: eventstreams
+    eventstreams.ibm.com/cluster: my-kafka-cluster
 spec:
   replicas: 1
   topicName: APA.TRADES

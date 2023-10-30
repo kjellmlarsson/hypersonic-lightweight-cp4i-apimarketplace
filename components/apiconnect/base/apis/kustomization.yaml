@@ -21,3 +21,8 @@ resources:
   - rabbitmq-queue-api.yaml
 
   - products
+
+patches:
+  - target:
+      kind: API
+    path: apic-providerorg.yaml

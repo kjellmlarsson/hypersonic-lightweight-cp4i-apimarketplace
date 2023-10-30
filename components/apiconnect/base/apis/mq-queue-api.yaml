@@ -43,7 +43,7 @@ data:
             cipherSpec: ANY_TLS12_OR_HIGHER
             bindingVersion: 0.1.0
     channels:
-      order/create:
+      ORDER/CREATE:
         bindings:
           ibmmq:
             destinationType: queue

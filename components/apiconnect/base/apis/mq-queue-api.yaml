@@ -64,13 +64,12 @@ data:
           payload:
             type: object
             properties:
-              displayName:
+              orderId:
                 type: string
-                description: Name of the user
-              email:
+                description: id of the order to create
+              customerId:
                 type: string
-                format: email
-                description: Email of the user
+                description: Id of the customer to create the order for
       securitySchemes:
         X-IBM-Client-Id:
           type: userPassword

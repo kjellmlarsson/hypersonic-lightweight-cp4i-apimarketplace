@@ -7,7 +7,7 @@ data:
   data: |-
     asyncapi: 2.0.0
     info:
-      title: Order Create Topic
+      title: Created Orders Topic
       version: 1.0.0
       description: MQ Topic where created orders are published
     x-ibm-configuration:

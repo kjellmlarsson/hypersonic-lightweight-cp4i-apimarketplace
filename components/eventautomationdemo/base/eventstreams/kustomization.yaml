@@ -11,6 +11,3 @@ resources:
   - 09-apps-user.yaml
 
   - mq-source-connector.yaml
-  
-  #- es-cluster-2.yaml
-  #- es-cluster-2-user.yaml

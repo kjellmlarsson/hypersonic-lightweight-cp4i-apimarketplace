@@ -113,7 +113,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: apa-quotes
-  namespace: eventstreams-third-cluster
   labels:
     eventstreams.ibm.com/cluster: my-kafka-cluster
 spec:
@@ -125,7 +124,6 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaTopic
 metadata:
   name: apa-trades
-  namespace: eventstreams-third-cluster
   labels:
     eventstreams.ibm.com/cluster: my-kafka-cluster
 spec:

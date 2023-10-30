@@ -7,9 +7,9 @@ data:
   data: |-
     asyncapi: 2.0.0
     info:
-      title: Order Create Events
+      title: Order Create Topic
       version: 1.0.0
-      description: Order create events are published on this topic
+      description: MQ Topic where created orders are published
     x-ibm-configuration:
       phase: realized
       enforced: false
@@ -35,7 +35,7 @@ data:
             cipherSpec: ANY_TLS12_OR_HIGHER
             bindingVersion: 0.1.0
     channels:
-      order/created:
+      ORDER/CREATED:
         bindings:
           ibmmq:
             topic:

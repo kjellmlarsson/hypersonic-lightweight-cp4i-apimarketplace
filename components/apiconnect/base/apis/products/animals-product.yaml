@@ -29,6 +29,5 @@ spec:
       - name: dog-facts-api
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
       catalog: sandbox

@@ -28,6 +28,5 @@ spec:
       - name: sensor-readings-api
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
       catalog: sandbox

@@ -20,6 +20,5 @@ spec:
       - name: rabbitmq-queue-api
   share:
     apim:
-      #credentialsSecret: apim-credentials
       providerOrg: providerorg
       catalog: sandbox

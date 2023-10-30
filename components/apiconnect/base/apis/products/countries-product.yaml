@@ -28,6 +28,5 @@ spec:
       - name: countries-gql-api
   share:
     apim:
-      credentialsSecret: apim-credentials
       providerOrg: providerorg
       catalog: sandbox

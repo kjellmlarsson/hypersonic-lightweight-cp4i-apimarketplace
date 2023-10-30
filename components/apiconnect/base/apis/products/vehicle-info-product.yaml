@@ -1,7 +1,7 @@
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: Product
 metadata:
-  name: vechicle-info-product
+  name: vehicle-info-product
 spec:
   state: Published
   definition:

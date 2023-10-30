@@ -5,5 +5,6 @@ metadata:
 spec:
   channel: v11.0
   name: ibm-eventendpointmanagement
+  installPlanApproval: Manual
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace

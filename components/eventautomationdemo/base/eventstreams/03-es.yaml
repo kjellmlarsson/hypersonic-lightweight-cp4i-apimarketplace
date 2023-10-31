@@ -32,12 +32,12 @@ spec:
           port: 9095
           tls: true
           type: internal
-        #- name: extscram
-        #  type: route
-        #  port: 9097
-        #  tls: true
-        #  authentication:
-        #    type: scram-sha-512
+        - name: extscram
+          type: route
+          port: 9097
+          tls: true
+          authentication:
+            type: scram-sha-512
       replicas: 3
       storage:
         type: persistent-claim

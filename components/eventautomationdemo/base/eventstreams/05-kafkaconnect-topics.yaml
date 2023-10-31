@@ -120,13 +120,13 @@ spec:
   topicName: APA.QUOTES
   partitions: 1
 ---
-#apiVersion: eventstreams.ibm.com/v1beta2
-#kind: KafkaTopic
-#metadata:
-#  name: apa-trades
-#  labels:
-#    eventstreams.ibm.com/cluster: my-kafka-cluster
-#spec:
-#  replicas: 1
-#  topicName: APA.TRADES
-#  partitions: 1
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: apa-trades
+  labels:
+    eventstreams.ibm.com/cluster: my-kafka-cluster
+spec:
+  replicas: 1
+  topicName: APA.TRADES
+  partitions: 1

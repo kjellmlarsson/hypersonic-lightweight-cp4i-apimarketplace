@@ -108,25 +108,25 @@ spec:
   replicas: 1
   topicName: SENSOR.READINGS
 
-#---
-#apiVersion: eventstreams.ibm.com/v1beta2
-#kind: KafkaTopic
-#metadata:
-#  name: apa-quotes
-#  labels:
-#    eventstreams.ibm.com/cluster: my-kafka-cluster
-#spec:
-#  replicas: 1
-#  topicName: APA.QUOTES
-#  partitions: 1
-#---
-#apiVersion: eventstreams.ibm.com/v1beta2
-#kind: KafkaTopic
-#metadata:
-#  name: apa-trades
-#  labels:
-#    eventstreams.ibm.com/cluster: my-kafka-cluster
-#spec:
-#  replicas: 1
-#  topicName: APA.TRADES
-#  partitions: 1
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: ap-quotes
+  labels:
+    eventstreams.ibm.com/cluster: my-kafka-cluster
+spec:
+  replicas: 1
+  topicName: AP.QUOTES
+  partitions: 1
+---
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: ap-trades
+  labels:
+    eventstreams.ibm.com/cluster: my-kafka-cluster
+spec:
+  replicas: 1
+  topicName: AP.TRADES
+  partitions: 1

@@ -1,3 +1,14 @@
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: mq-topic-api
+spec:
+  definition:
+    configMap: mq-topic-api-definition
+  share:
+    apim:
+      providerOrg: providerorg
+---
 kind: ConfigMap
 apiVersion: v1
 metadata:
@@ -60,14 +71,3 @@ data:
               customerId:
                 type: string
                 description: Customer who the order was created for
----
-apiVersion: apiconnect.ibm.com/v1beta1
-kind: API
-metadata:
-  name: mq-topic-api
-spec:
-  definition:
-    configMap: mq-topic-api-definition
-  share:
-    apim:
-      providerOrg: providerorg

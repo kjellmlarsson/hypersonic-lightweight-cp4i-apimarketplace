@@ -1,3 +1,14 @@
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: rabbitmq-queue-api
+spec:
+  definition:
+    configMap: rabbitmq-queue-api-definition
+  share:
+    apim:
+      providerOrg: providerorg
+---
 kind: ConfigMap
 apiVersion: v1
 metadata:
@@ -65,14 +76,3 @@ data:
               customerReference:
                 type: string
                 description: Reference for the customer according the order
----
-apiVersion: apiconnect.ibm.com/v1beta1
-kind: API
-metadata:
-  name: rabbitmq-queue-api
-spec:
-  definition:
-    configMap: rabbitmq-queue-api-definition
-  share:
-    apim:
-      providerOrg: providerorg

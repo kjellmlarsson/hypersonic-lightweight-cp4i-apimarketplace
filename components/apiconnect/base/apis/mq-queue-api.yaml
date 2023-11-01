@@ -1,3 +1,14 @@
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: mq-queue-api
+spec:
+  definition:
+    configMap: mq-queue-api-definition
+  share:
+    apim:
+      providerOrg: providerorg
+---
 kind: ConfigMap
 apiVersion: v1
 metadata:
@@ -72,14 +83,3 @@ data:
       securitySchemes:
         X-IBM-Client-Id:
           type: userPassword
----
-apiVersion: apiconnect.ibm.com/v1beta1
-kind: API
-metadata:
-  name: mq-queue-api
-spec:
-  definition:
-    configMap: mq-queue-api-definition
-  share:
-    apim:
-      providerOrg: providerorg

@@ -2,7 +2,6 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: countries-gql-api
-  namespace: cp4i
 spec:
   definition:
     configMap: countries-gql-api-definition
@@ -14,7 +13,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: countries-gql-api-definition
-  namespace: cp4i
 data:
   data: |-
     swagger: '2.0'

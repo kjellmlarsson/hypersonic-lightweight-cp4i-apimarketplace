@@ -2,7 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: mq-queue-api-definition
-  namespace: cp4i
 data:
   data: |-
     asyncapi: 2.0.0
@@ -78,7 +77,6 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: mq-queue-api
-  namespace: cp4i
 spec:
   definition:
     configMap: mq-queue-api-definition

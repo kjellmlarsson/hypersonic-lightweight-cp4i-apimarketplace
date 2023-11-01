@@ -2,7 +2,6 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: sensor-readings-api
-  namespace: cp4i
 spec:
   definition:
     configMap: sensor-readings-api-definition
@@ -14,7 +13,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: sensor-readings-api-definition
-  namespace: cp4i
 data:
   data: |-
     asyncapi: 2.1.0

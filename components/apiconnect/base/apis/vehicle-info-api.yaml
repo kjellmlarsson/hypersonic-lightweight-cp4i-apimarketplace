@@ -13,7 +13,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: vehicle-info-api-definition
-  namespace: cp4i
 data:
   data: |-
     swagger: '2.0'

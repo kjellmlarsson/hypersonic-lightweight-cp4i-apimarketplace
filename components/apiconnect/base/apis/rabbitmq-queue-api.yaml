@@ -2,7 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: rabbitmq-queue-api-definition
-  namespace: cp4i
 data:
   data: |-
     asyncapi: 2.0.0
@@ -71,7 +70,6 @@ apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
   name: rabbitmq-queue-api
-  namespace: cp4i
 spec:
   definition:
     configMap: rabbitmq-queue-api-definition

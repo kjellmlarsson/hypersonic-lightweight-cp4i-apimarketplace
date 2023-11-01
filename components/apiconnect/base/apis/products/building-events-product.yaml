@@ -11,8 +11,6 @@ spec:
       name: building-events-product
       description: >-
         Kafka Topics for events in the building - includes usage of badges and sensor readings from rooms. 
-
-        Managed by the operations team. 
       version: '1.0'
       categories:
           - Domain/Accounts

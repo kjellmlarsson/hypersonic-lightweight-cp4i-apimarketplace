@@ -32,6 +32,9 @@ configMapGenerator:
   - name: vehicle-info-all-manufacturers-api-cm
     files:
       - vehicle-info-all-manufacturers-openapi.yaml
+  - name: rabbit-mq-api-cm
+    files:
+      - rabbitmq-asyncapi.yaml
 
 generatorOptions:
   disableNameSuffixHash: true

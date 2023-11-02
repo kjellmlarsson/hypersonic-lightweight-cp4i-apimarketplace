@@ -7,7 +7,7 @@ spec:
   definition:
     product: 1.0.0
     info:
-      title: 3. Something else Product Information Catalog Vehicle Listing
+      title: 3. NHTSA Product Information Catalog Vehicle Listing
       name: vechicle-info-product
       description: >-      
         The National Highway Traffic Safety Administration (NHTSA) Product Information Catalog Vehicle Listing (vPIC) Application Programming Interface (API) provides different ways to gather 

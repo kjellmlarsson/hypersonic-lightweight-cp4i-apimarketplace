@@ -30,7 +30,7 @@ spec:
         - Protocol/REST
   apis:
     apis:
-      - name: vehicle-info-api
+      - name: vehicle-info-api-all-manufacturers
       - name: vehicle-info-api-all-makes
   share:
     apim:
@@ -40,10 +40,10 @@ spec:
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
 metadata:
-  name: vehicle-info-api
+  name: vehicle-info-api-all-manufacturers
 spec:
   definition:
-    configMap: vehicle-info-api-definition
+    configMap: vehicle-info-all-manufacturers-api-cm
   share:
     apim:
       providerOrg: providerorg

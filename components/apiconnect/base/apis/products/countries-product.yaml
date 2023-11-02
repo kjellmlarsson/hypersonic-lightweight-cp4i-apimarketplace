@@ -30,3 +30,14 @@ spec:
     apim:
       providerOrg: providerorg
       catalog: sandbox
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: countries-gql-api
+spec:
+  definition:
+    configMap: countries-gql-api-cm
+  share:
+    apim:
+      providerOrg: providerorg

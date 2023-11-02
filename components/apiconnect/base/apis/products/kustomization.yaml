@@ -9,3 +9,11 @@ resources:
   - building-events-product.yaml
   - mq-product.yaml
   - rabbitmq-product.yaml
+
+patches:
+  - target:
+      kind: API
+    path: apic-creds.yaml
+  - target:
+      kind: Product
+    path: apic-creds.yaml

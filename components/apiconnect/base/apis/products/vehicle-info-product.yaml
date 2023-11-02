@@ -36,3 +36,26 @@ spec:
     apim:
       providerOrg: providerorg
       catalog: sandbox
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: vehicle-info-api
+spec:
+  definition:
+    configMap: vehicle-info-api-definition
+  share:
+    apim:
+      providerOrg: providerorg
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: vehicle-info-api-all-makes
+spec:
+  definition:
+    configMap: vehicle-info-api-all-makes-cm
+  share:
+    apim:
+      providerOrg: providerorg
+

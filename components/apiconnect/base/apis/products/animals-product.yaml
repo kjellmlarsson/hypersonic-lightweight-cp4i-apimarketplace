@@ -31,3 +31,25 @@ spec:
     apim:
       providerOrg: providerorg
       catalog: sandbox
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: cat-facts-api
+spec:
+  definition:
+    configMap: cat-facts-api-cm
+  share:
+    apim:
+      providerOrg: providerorg
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: dog-facts-api
+spec:
+  definition:
+    configMap: dog-facts-api-cm
+  share:
+    apim:
+      providerOrg: providerorg

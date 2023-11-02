@@ -24,3 +24,25 @@ spec:
     apim:
       providerOrg: providerorg
       catalog: sandbox
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: mq-topic-api
+spec:
+  definition:
+    configMap: mq-topic-api-cm
+  share:
+    apim:
+      providerOrg: providerorg
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: mq-queue-api
+spec:
+  definition:
+    configMap: mq-queue-api-cm
+  share:
+    apim:
+      providerOrg: providerorg

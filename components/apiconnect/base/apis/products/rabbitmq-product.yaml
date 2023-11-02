@@ -22,3 +22,14 @@ spec:
     apim:
       providerOrg: providerorg
       catalog: sandbox
+---
+apiVersion: apiconnect.ibm.com/v1beta1
+kind: API
+metadata:
+  name: rabbitmq-queue-api
+spec:
+  definition:
+    configMap: rabbitmq-queue-api-cm
+  share:
+    apim:
+      providerOrg: providerorg

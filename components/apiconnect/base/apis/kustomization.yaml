@@ -6,6 +6,9 @@ configMapGenerator:
     files:
       - cat-facts-openapi.yaml
 
+generatorOptions:
+  disableNameSuffixHash: true
+
 resources:
 
   - cat-facts-api.yaml  

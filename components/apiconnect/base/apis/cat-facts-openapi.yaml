@@ -51,6 +51,8 @@ info:
   x-ibm-name: cat-facts-api
   x-ibm-summary: |-
     Cat Facts API - An API for Cats
+  contact:
+    url: https://raw.githubusercontent.com/kjellmlarsson/hypersonic-lightweight-cp4i-apimarketplace/main/components/apiconnect/base/apis/cat-facts-openapi.yaml
 openapi: 3.0.0
 tags:
   - name: REST

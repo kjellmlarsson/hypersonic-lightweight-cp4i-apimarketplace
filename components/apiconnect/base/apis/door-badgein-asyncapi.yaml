@@ -14,6 +14,7 @@ info:
     Records an employee using their id badge to go through a door.
   x-ibm-name: DOOR.BADGEIN
   contact:
+    url: https://raw.githubusercontent.com/kjellmlarsson/hypersonic-lightweight-cp4i-apimarketplace/main/components/apiconnect/base/apis/door-badgein-asyncapi.yaml
     email: andre@loosehangers.com
 tags:
   - name: operations

@@ -16,6 +16,7 @@ info:
   termsOfService: https://dogapi.dog/terms
   contact:
     email: dev@dogapi.dog
+    url: https://raw.githubusercontent.com/kjellmlarsson/hypersonic-lightweight-cp4i-apimarketplace/main/components/apiconnect/base/apis/dog-facts-openapi.yaml
   license:
     name: MIT
     url: https://github.com/kinduff/dogapi.dog/blob/master/LICENSE

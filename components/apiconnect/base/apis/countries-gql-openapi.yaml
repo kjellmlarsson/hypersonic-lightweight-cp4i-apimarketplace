@@ -5,6 +5,8 @@ info:
   x-ibm-summary: |-
     This is a public GraphQL API for information about countries, continents, and languages.
   version: 1.0.0
+  contact:
+    url: https://raw.githubusercontent.com/kjellmlarsson/hypersonic-lightweight-cp4i-apimarketplace/main/components/apiconnect/base/apis/countries-gql-openapi.yaml
 schemes:
   - https
   - wss
